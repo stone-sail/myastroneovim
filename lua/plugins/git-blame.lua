@@ -4,7 +4,7 @@ return {
     config = function()
       -- vim.g.gitblame_message_template = "<author> • <committer> • <committer-date> • <summary> • <sha>"
       vim.g.gitblame_message_template = " <committer> • <committer-date> • <summary> • <sha>"
-      vim.g.gitblame_data_format = "%r|%x%Y"
+      vim.g.gitblame_date_format = "%r,%x%,%Y"
     end,
   },
 }
