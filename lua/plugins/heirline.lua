@@ -24,7 +24,7 @@ return {
           local cwd = vim.fn.getcwd(0)
           self.cwd = vim.fn.fnamemodify(cwd, ":~")
         end,
-        hl = { fg = "white", bold = true },
+        hl = { fg = "pink", bold = true },
 
         flexible = 1,
 
@@ -55,6 +55,7 @@ return {
             icon = { kind = "VimIcon", padding = { right = 1, left = 1 } },
           },
         },
+        status.component.builder(WorkDir),
         status.component.git_branch(),
         status.component.file_info { filename = { fallback = "Empty" }, filetype = false },
         -- status.component.git_diff(),
@@ -62,8 +63,8 @@ return {
           padding = { left = 1 },
           surround = { separator = "none" },
         },
+
         status.component.diagnostics(),
-        status.component.builder(WorkDir),
         status.component.fill(),
         status.component.cmd_info(),
         status.component.fill(),
@@ -105,7 +106,6 @@ return {
         status.component.virtual_env(),
         status.component.nav(),
       }
-      opts.winbar = false
     end,
   },
   -- {
