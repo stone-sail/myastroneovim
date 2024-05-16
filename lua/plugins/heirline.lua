@@ -56,8 +56,8 @@ return {
           },
         },
         status.component.builder(WorkDir),
-        status.component.git_branch(),
         status.component.file_info { filename = { fallback = "Empty" }, filetype = false },
+        status.component.git_branch(),
         -- status.component.git_diff(),
         status.component.git_diff {
           padding = { left = 1 },
