@@ -16,4 +16,6 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity/motion/flash-nvim" },
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
 }
