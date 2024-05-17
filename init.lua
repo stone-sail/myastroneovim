@@ -17,3 +17,6 @@ end
 
 require "lazy_setup"
 require "polish"
+require "config.keymaps"
+require "config.autocmds"
+require "config.options"
