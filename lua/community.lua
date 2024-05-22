@@ -19,4 +19,5 @@ return {
   { import = "astrocommunity/motion/flash-nvim" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   { import = "astrocommunity.editing-support.nvim-treesitter-context" },
+  { import = "astrocommunity.motion.flash-nvim" },
 }
