@@ -20,3 +20,19 @@ require "polish"
 require "config.keymaps"
 require "config.autocmds"
 require "config.options"
+
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+  -- Use a sharp border with `FloatBorder` highlights
+  border = "single",
+  -- add the title in hover float window
+  title = "hover",
+})
+
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
+  -- Use a sharp border with `FloatBorder` highlights
+  border = "single",
+})
+
+-- vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(require("noice.lsp.hover").on_hover, { border = "rounded" })
+-- vim.lsp.handlers["textDocument/signatureHelp"] =
+--   vim.lsp.with(require("noice.lsp.signature").signatures, { border = "rounded" })
