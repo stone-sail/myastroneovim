@@ -17,5 +17,5 @@ vim.api.nvim_set_keymap("n", "<localleader>ec", ":cd ~/.config/nvim<CR>", { nore
 vim.api.nvim_set_keymap("n", "<C-c>", '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<C-c>", '"+y', { noremap = true, silent = true })
 -- 从系统剪贴板粘贴
-vim.api.nvim_set_keymap("n", "<C-v>", '"+p', { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i", "<C-v>", "<C-r>+", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<D-v>", '"+p', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<D-v>", "<C-r>+", { noremap = true, silent = true })
