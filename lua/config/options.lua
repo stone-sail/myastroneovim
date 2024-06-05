@@ -9,6 +9,8 @@ vim.wo.cursorcolumn = false
 vim.wo.colorcolumn = "120"
 vim.cmd "highlight CursorLine guibg=#4e4e4e"
 vim.cmd "highlight CursorColumn guibg=#2e3e4e"
+vim.cmd "highlight LineNr guifg=#808080"
+-- vim.cmd "highlight LineNr guifg=#FFFF00"
 
 vim.cmd [[
   highlight ColorColumn guibg=gray
