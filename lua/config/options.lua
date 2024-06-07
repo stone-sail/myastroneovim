@@ -15,3 +15,14 @@ vim.cmd "highlight LineNr guifg=#808080"
 vim.cmd [[
   highlight ColorColumn guibg=gray
 ]]
+
+-- 设置neoformat使用clang-format来格式化C文件
+-- vim.g.neoformat_c_clangformat = {
+--   exe = "clang-format",
+--   args = { "--style='{BasedOnStyle: Google, IndentWidth: 10}'" },
+--   -- stdin = 1,
+-- }
+
+-- vim.g.neoformat_enabled_c = ['clang_format']
+
+-- vim.g.clang_format. style_options = { BasedOnStyle: Google}
